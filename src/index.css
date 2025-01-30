@@ -18,3 +18,18 @@ body {
   font-size: 16px;
 }
 
+.bp{
+  padding-inline: 45px;
+}
+
+.heroList h2{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: auto;
+}
+
+.heroList p{
+  color: black;
+  opacity: 60%;
+}
+

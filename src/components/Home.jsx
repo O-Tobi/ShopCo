@@ -1,4 +1,19 @@
-import { Arrow, BigStar, CalvinKlein, Cancel, Cart, Gucci, HeroImg, Prada, Profile, Search, SmallStar, Versace, Zara } from "./assets";
+import {
+  Arrow,
+  BigStar,
+  CalvinKlein,
+  Cancel,
+  Cart,
+  Gucci,
+  HeroImg,
+  Line,
+  Prada,
+  Profile,
+  Search,
+  SmallStar,
+  Versace,
+  Zara,
+} from "./assets";
 
 const Home = () => {
   return (
@@ -21,7 +36,12 @@ const Home = () => {
           <h1 className="font-heading font-bold text-[32px] ">SHOP.CO</h1>
           <ul className="flex gap-[24px]">
             <li>
-              <na className="flex items-center gap-2">Shop <span><img src={Arrow}/></span></na>
+              <na className="flex items-center gap-2">
+                Shop{" "}
+                <span>
+                  <img src={Arrow} />
+                </span>
+              </na>
             </li>
 
             <li>
@@ -38,7 +58,7 @@ const Home = () => {
           </ul>
 
           <label className="input h-[48px] bg-secondaryHero rounded-3xl flex items-center gap-3 px-4 py-3 w-[569px]">
-            <img src={Search}/>
+            <img src={Search} />
             <input
               type="text"
               className="grow rounded-3xl"
@@ -59,32 +79,38 @@ const Home = () => {
       </div>
 
       {/* hero starts here */}
-      <div>
+      <div className="flex h-[663px] bg-whiteHeroBg">
         {/* the right section starts here */}
-        <div>
-          <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-          <p>
+        <div className="bp my-12">
+          <h1 className="font-heading text-[64px] leading-none">
+            FIND CLOTHES <br /> THAT MATCHES <br /> YOUR STYLE
+          </h1>
+          <p className="text-primary opacity-[60%] leading-5 py-6">
             Browse through our diverse range of meticulously crafted garments,
-            designed to bring out your individuality and cater to your sense of
-            style.
+            designed <br /> to bring out your individuality and cater to your
+            sense of style.
           </p>
-          <button>Shop Now</button>
-          <ul>
-            <li>
-              <h2>200+</h2>
-              <p>International Brands</p>
-            </li>
-
-            <li>
-              <h2>2,000+</h2>
-              <p>High-Quality Products</p>
-            </li>
-
-            <li>
-              <h2>30,000+</h2>
-              <p>Happy Customers</p>
-            </li>
-          </ul>
+          <button className="btn font-light text-whiteFont bg-black rounded-full px-[54px] py-[16px]">
+            Shop Now
+          </button>{" "}
+          <div className="py-6">
+            <ul className="flex gap-8 heroList">
+              <li>
+                <h2>200+</h2>
+                <p>International Brands</p>
+              </li>
+              <img src={Line} />
+              <li>
+                <h2>2,000+</h2>
+                <p>High-Quality Products</p>
+              </li>
+              <img src={Line} />
+              <li>
+                <h2>30,000+</h2>
+                <p>Happy Customers</p>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* the left section starts here */}
@@ -94,31 +120,31 @@ const Home = () => {
             <img src={BigStar} />
             <img src={SmallStar} />
           </div>
-
-          <div>
-            <ul>
-                <li>
-                    <img src={Versace}/>
-                </li>
-
-                <li>
-                    <img src={Zara}/>
-                </li>
-
-                <li>
-                    <img src={Gucci}/>
-                </li>
-
-                <li>
-                    <img src={Prada}/>
-                </li>
-
-                <li>
-                    <img src={CalvinKlein}/>
-                </li>
-            </ul>
-          </div>
         </div>
+      </div>
+
+      <div className="bg-black">
+        <ul>
+          <li>
+            <img src={Versace} />
+          </li>
+
+          <li>
+            <img src={Zara} />
+          </li>
+
+          <li>
+            <img src={Gucci} />
+          </li>
+
+          <li>
+            <img src={Prada} />
+          </li>
+
+          <li>
+            <img src={CalvinKlein} />
+          </li>
+        </ul>
       </div>
     </div>
   );
