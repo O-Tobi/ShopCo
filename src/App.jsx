@@ -1,8 +1,9 @@
+import Home from "./components/Home";
 
 const App = () => {
   return (
     <div>
-      <button className="btn btn-productBg cursor-pointer font-body text-lg">this is a test</button>
+      <Home />
     </div>
   )
 };
