@@ -31,5 +31,7 @@ body {
 .heroList p{
   color: black;
   opacity: 60%;
+  white-space: nowrap;
 }
+
 

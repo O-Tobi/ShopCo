@@ -1,5 +1,6 @@
 import {
   Arrow,
+  BigHero,
   BigStar,
   CalvinKlein,
   Cancel,
@@ -79,7 +80,7 @@ const Home = () => {
       </div>
 
       {/* hero starts here */}
-      <div className="flex h-[663px] bg-whiteHeroBg">
+      <div className="flex h-[663px]" style={{ backgroundImage: `url(${BigHero})` }}>
         {/* the right section starts here */}
         <div className="bp my-12">
           <h1 className="font-heading text-[64px] leading-none">
@@ -93,7 +94,7 @@ const Home = () => {
           <button className="btn font-light text-whiteFont bg-black rounded-full px-[54px] py-[16px]">
             Shop Now
           </button>{" "}
-          <div className="py-6">
+          <div className="py-6 z-8">
             <ul className="flex gap-8 heroList">
               <li>
                 <h2>200+</h2>
@@ -115,10 +116,9 @@ const Home = () => {
 
         {/* the left section starts here */}
         <div>
-          <div>
-            <img src={HeroImg} />
-            <img src={BigStar} />
-            <img src={SmallStar} />
+          <div className="flex">
+            <img src={SmallStar} className="mb-[-580px] ml-[80px] z-2"/>
+            <img src={BigStar} className="mb-[-280px] ml-[460px]"/>
           </div>
         </div>
       </div>
