@@ -12,7 +12,8 @@ import ck from "./../assets/ck-logo.png";
 import s from "./../assets/search.svg";
 import a from "./../assets/arrow.svg"
 import l from "./../assets/line.svg";
-import bg from "./../assets/bigHero.png"
+import bg from "./../assets/bigHero.png";
+import p1 from "./../assets/product1.png";
 
 
 
@@ -31,3 +32,4 @@ export const Search = s;
 export const Arrow = a;
 export const Line = l;
 export const BigHero = bg;
+export const Product1 = p1;

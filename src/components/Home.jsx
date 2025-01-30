@@ -1,11 +1,11 @@
 import {
   Arrow,
-  BigHero,
   BigStar,
   CalvinKlein,
   Cancel,
   Cart,
   Gucci,
+  HeroImg,
   Line,
   Prada,
   Profile,
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
       {/* hero starts here */}
-      <div className="flex h-[663px]" style={{ backgroundImage: `url(${BigHero})` }}>
+      <div className="flex justify-between h-[663px] bg-whiteHeroBg w-screen">
         {/* the right section starts here */}
         <div className="bp my-12">
           <h1 className="font-heading text-[64px] leading-none">
@@ -114,14 +114,21 @@ const Home = () => {
         </div>
 
         {/* the left section starts here */}
-        <div>
-          <div className="flex">
-            <img src={SmallStar} className="mb-[-580px] ml-[80px] z-2"/>
-            <img src={BigStar} className="mb-[-280px] ml-[460px]"/>
+        <div className="">
+          <div className="flex justify-center items-center relative">
+            <img src={SmallStar} className="absolute left-2 z-10" />
+
+            <img src={HeroImg} className="h-[663px]  z-0" />
+
+            <img
+              src={BigStar}
+              className="absolute bottom-0 right-6 top-[100px] z-10"
+            />
           </div>
         </div>
       </div>
 
+        {/* brands here */}
       <div className="bp flex justify-center items-center bg-black h-[122px]">
         <ul className="flex justify-between w-full">
           <li>
@@ -145,6 +152,19 @@ const Home = () => {
           </li>
         </ul>
       </div>
+
+      {/* products here */}
+        <div>
+            <div>
+                <h2>NEW ARRIVALS</h2>
+                {/* product cards here */}
+                <div>
+                    <div>
+                        <img />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   );
 };
