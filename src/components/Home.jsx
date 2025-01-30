@@ -6,7 +6,6 @@ import {
   Cancel,
   Cart,
   Gucci,
-  HeroImg,
   Line,
   Prada,
   Profile,
@@ -123,8 +122,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black">
-        <ul>
+      <div className="bp flex justify-center items-center bg-black h-[122px]">
+        <ul className="flex justify-between w-full">
           <li>
             <img src={Versace} />
           </li>
