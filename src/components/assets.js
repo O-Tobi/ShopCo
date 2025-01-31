@@ -23,6 +23,12 @@ import p7 from "./../assets/product7.png";
 import p8 from "./../assets/product8.png";
 import l2 from "./../assets/horizontalLine.svg";
 import rt from "./../assets/rating.svg";
+import cs from "./../assets/casual.png";
+import fm from "./../assets/formal.png";
+import pty from "./../assets/party.png";
+import gym from "./../assets/gym.png";
+
+
 
 
 
@@ -52,4 +58,7 @@ export const Product7 = p7;
 export const Product8 = p8;
 export const HorizontalLine = l2;
 export const Rating = rt;
-
+export const Casual = cs;
+export const Formal = fm;
+export const Party = pty;
+export const Gym = gym;

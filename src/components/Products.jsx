@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Rating } from "./assets";
 
 const Product = ({
@@ -11,17 +12,17 @@ const Product = ({
     <div>
       <div className="flex flex-col mx-2">
         <div className="mb-4">
-          <img src={productImage} alt="product1" className="h-[298px]" />
+          <img src={productImage} alt={productName} className="h-[298px]" />
         </div>
         <div className="mb-4">
           <p className="font-bold text-xl mb-2">{productName}</p>
           <div className="flex mb-2">
-            <img src={Rating} />
-            <img src={Rating} />
-            <img src={Rating} />
-            <img src={Rating} />
-            <img src={Rating} />
-            <p>4.5/5</p>
+            {[...Array(5)].map((_, i) => (
+              <img key={i} src={Rating} alt="star rating" />
+            ))}
+            <p>
+              4.5/<span className="opacity-40">5</span>
+            </p>
           </div>
           <div className="flex gap-[10px]">
             <h2 className="font-bold text-2xl">${productPrice}</h2>
@@ -42,6 +43,15 @@ const Product = ({
       </div>
     </div>
   );
+};
+
+// ✅ Add PropTypes validation
+Product.propTypes = {
+  productName: PropTypes.string.isRequired,
+  productImage: PropTypes.string.isRequired,
+  productPrice: PropTypes.number.isRequired,
+  oldPrice: PropTypes.number,
+  discount: PropTypes.number,
 };
 
 export default Product;
