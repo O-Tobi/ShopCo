@@ -200,25 +200,215 @@ const Home = () => {
         <h2 className="bp font-heading text-5xl my-16 ">OUR HAPPY CUSTOMERS</h2>
 
         {/* rating carousels goes here */}
+        <div className="carousel carousel-center gap-4">
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
 
-        <div>
-          <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
-            <div className="flex gap-[6.49px] mb-[15px]">
-              {[...Array(5)].map((_, i) => (
-                <img key={i} src={Rating} alt="star rating" />
-              ))}
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
             </div>
-            <div className="flex gap-1 mb-[12px]">
-              <h4 className="font-bold text-xl">Sarah M.</h4>
-              <img src={Check} alt="check" />
-            </div>
+          </div>
 
-            <p className="text-[16px] opacity-60">
-              &ldquo;I&rsquo;m blown away by the quality and style of the
-              clothes I received from Shop.co. From casual wear to elegant
-              dresses, every piece I&rsquo;ve bought has exceeded my
-              expectations.&rdquo;
-            </p>
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <div className="carousel-item">
+            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+              <div className="flex gap-[6.49px] mb-[15px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <div className="flex gap-1 mb-[12px]">
+                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <img src={Check} alt="check" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                &ldquo;I&rsquo;m blown away by the quality and style of the
+                clothes I received from Shop.co. From casual wear to elegant
+                dresses, every piece I&rsquo;ve bought has exceeded my
+                expectations.&rdquo;
+              </p>
+            </div>
           </div>
         </div>
       </div>
