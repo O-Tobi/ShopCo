@@ -13,7 +13,7 @@ import {
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-between h-[663px] bg-whiteHeroBg w-screen">
+      <div className="flex flex-wrap gap-[4rem] h-[663px] bg-whiteHeroBg w-screen">
         {/* the right section starts here */}
         <div className="bp my-12">
           <h1 className="font-heading text-[64px] leading-none">

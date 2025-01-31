@@ -27,6 +27,8 @@ import cs from "./../assets/casual.png";
 import fm from "./../assets/formal.png";
 import pty from "./../assets/party.png";
 import gym from "./../assets/gym.png";
+import chk from "./../assets/check.svg";
+
 
 
 
@@ -62,3 +64,4 @@ export const Casual = cs;
 export const Formal = fm;
 export const Party = pty;
 export const Gym = gym;
+export const Check = chk;

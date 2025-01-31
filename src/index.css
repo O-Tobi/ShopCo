@@ -2,37 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face{
+@font-face {
   font-family: "Integral Bold";
-  src: url(../src/assets/fonts/integral/Fontspring-DEMO-integralcf-demibold.otf) format("woff2");
+  src: url(../src/assets/fonts/integral/Fontspring-DEMO-integralcf-demibold.otf)
+    format("woff2");
 }
 
-@font-face{
+@font-face {
   font-family: "Satoshi";
   src: url(../src/assets/fonts/satoshi/WEB/fonts/Satoshi-Regular.woff2);
 }
 
-body, html {
+body,
+html {
+  max-width: min(100%, 1440px);
+  margin: 0 auto;
   font-family: "Satoshi", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
 }
 
-.bp{
+.bp {
   padding-inline: 45px;
 }
 
-.heroList h2{
+.heroList h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: auto;
 }
 
-.heroList p{
+.heroList p {
   color: black;
   opacity: 60%;
   white-space: nowrap;
 }
-
-
