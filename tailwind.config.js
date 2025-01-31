@@ -16,6 +16,8 @@ export default {
         whiteFont: 'oklch(100% 0 0)',
         productBg: 'oklch(95.04% 0.0025 48.72)',
         secondaryHero: 'oklch(95.51% 0 0)',
+        discount: 'oklch(64.89% 0.2369709178767159 26.972770714418246)',
+        discountbg: 'oklch(64.89% 0.2369709178767159 26.972770714418246 / 10%)'
       }, 
     },
   },
