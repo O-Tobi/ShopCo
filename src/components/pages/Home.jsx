@@ -5,6 +5,7 @@ import {
   ApplePay,
   Casual,
   Check,
+  Email,
   Facebook,
   Formal,
   Github,
@@ -305,24 +306,40 @@ const Home = () => {
         {/* footer here */}
 
         <div className="parent">
-          <div className="blackbg">
-            <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-            <div>
-              <input type="text" name="" id="" />
-              <button>Subscribe to Newsletter</button>
+          {/* back background starts here */}
+          <div className="flex items-center justify-between mx-[2.8125rem] rounded-[1.25rem] px-16 py-[2.25rem] bg-black ">
+            <h2 className="font-heading text-[2.5rem] leading-[2.8125rem] w-[34.4375rem] text-white text-wrap">
+              STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </h2>
+            <div className="flex flex-col gap-[.875rem]">
+              <label className="input h-[3rem] bg-secondaryHero rounded-[3.875rem] flex items-center gap-3 px-4 py-3 w-[21.8125rem]">
+                <img src={Email} />
+                <input
+                  type="text"
+                  className="grow rounded-[3.875rem]"
+                  placeholder="Enter your email address"
+                />
+              </label>
+              <button className="btn font-medium text-[1rem] text-black bg-whiteFont rounded-full px-[1rem] py-[.75rem] w-[21.8125rem]">
+                Subscribe to Newsletter
+              </button>{" "}
             </div>
           </div>
 
-          <div className="footer">
-            <div className="footerContent">
-              <div className="1">
-                <h2>SHOP.CO</h2>
-                <p>
-                  We have clothes that suits your style and which you’re proud
-                  to wear. From women to men.
-                </p>
+          {/* footer starts here */}
+          <div className="bg-whiteHeroBg p-[2.8125rem]">
+            {/* footer content here */}
+            <div className="flex justify-between mb-[100px] items-center">
+              <div className="flex flex-col gap-[2.1875rem] w-[15.5rem] h-[11.0625rem]">
+                <div className="flex flex-col gap-[1.5625rem]">
+                  <h2 className="text-[2.0906rem] font-heading">SHOP.CO</h2>
+                  <p className="text-black/60 text-[.875rem] leading-[1.375rem]">
+                    We have clothes that suits your style and which you’re proud
+                    to wear. From women to men.
+                  </p>
+                </div>
 
-                <div className="socials">
+                <div className="flex gap-[.75rem]">
                   <a>
                     <img src={Twitter} alt="Twitter" />
                   </a>
@@ -338,10 +355,14 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="2">
-                <h3>COMPANY</h3>
+              <div className="flex flex-col gap-[1.625rem]">
+                <div>
+                  <h3 className="font-medium leading-[1.125rem] tracking-[.1875rem] ">
+                    COMPANY
+                  </h3>
+                </div>
 
-                <ul>
+                <ul className="flex flex-col text-black/60 leading-[1.1875rem] gap-6">
                   <li>
                     <a href="#">About</a>
                   </li>
@@ -357,10 +378,12 @@ const Home = () => {
                 </ul>
               </div>
 
-              <div className="3">
-                <h3>HELP</h3>
+              <div className="flex flex-col gap-[1.625rem]">
+                <h3 className="font-medium leading-[1.125rem] tracking-[.1875rem]">
+                  HELP
+                </h3>
 
-                <ul>
+                <ul className="flex flex-col text-black/60 leading-[1.1875rem] gap-6">
                   <li>
                     <a href="#">Customer Support</a>
                   </li>
@@ -376,10 +399,10 @@ const Home = () => {
                 </ul>
               </div>
 
-              <div className="4">
-                <h3>FAQ</h3>
+              <div className="flex flex-col gap-[1.625rem]">
+                <h3 className="font-medium leading-[1.125rem] tracking-[.1875rem]">FAQ</h3>
 
-                <ul>
+                <ul className="flex flex-col text-black/60 leading-[1.1875rem] gap-6">
                   <li>
                     <a href="#">Account</a>
                   </li>
@@ -395,10 +418,10 @@ const Home = () => {
                 </ul>
               </div>
 
-              <div className="5">
-                <h3>RESOURCES</h3>
+              <div className="flex flex-col gap-[1.625rem]">
+                <h3 className="font-medium leading-[1.125rem] tracking-[.1875rem] ">RESOURCES</h3>
 
-                <ul>
+                <ul className="flex flex-col text-black/60 leading-[1.1875rem] gap-6">
                   <li>
                     <a href="#">Free e-Books</a>
                   </li>
@@ -415,27 +438,27 @@ const Home = () => {
               </div>
             </div>
 
-            <div>
+            <div className="mt-12 mb-6">
               <img src={HorizontalLine} alt="horizontal line" />
             </div>
 
             <div className="footer-base">
               <p>Shop.co © 2000-2023, All Rights Reserved</p>
 
-              <div>
-                <a href="#">
+              <div className="flex">
+                <a>
                   <img src={Visa} alt="Visa" />
                 </a>
-                <a href="#">
+                <a>
                   <img src={MasterCard} alt="MasterCard" />
                 </a>
-                <a href="#">
+                <a>
                   <img src={Paypal} alt="Paypal" />
                 </a>
-                <a href="#">
+                <a>
                   <img src={ApplePay} alt="ApplePay" />
                 </a>
-                <a href="#">
+                <a>
                   <img src={GooglePay} alt="GooglePay" />
                 </a>
               </div>

@@ -28,11 +28,11 @@ const Navigation = () => {
           </li>
         </ul>
 
-        <label className="input h-[48px] bg-secondaryHero rounded-3xl flex items-center gap-3 px-4 py-3 w-[569px]">
+        <label className="input h-[48px] bg-secondaryHero rounded-[3.875rem] flex items-center gap-3 px-4 py-3 w-[569px]">
           <img src={Search} />
           <input
             type="text"
-            className="grow rounded-3xl"
+            className="grow rounded-[3.875rem]"
             placeholder="Search for products..."
           />
         </label>
