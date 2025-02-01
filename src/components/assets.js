@@ -38,6 +38,9 @@ import pp from "./../assets/paypal.svg";
 import ap from "./../assets/applepay.svg";
 import gp from "./../assets/googlepay.svg";
 import em from "./../assets/email.svg";
+import ar from "./../assets/arrowright.svg";
+import al from "./../assets/arrowleft.svg";
+
 
 
 
@@ -86,3 +89,5 @@ export const Paypal = pp;
 export const ApplePay = ap;
 export const GooglePay = gp;
 export const Email = em;
+export const ArrowRight = ar;
+export const ArrowLeft = al;
