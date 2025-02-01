@@ -1,4 +1,4 @@
-import { Arrow, Cart, Profile, Search } from "../assets";
+import { Arrow, Cart, Profile, Search } from "../../utils/assets";
 
 const Navigation = () => {
   return (

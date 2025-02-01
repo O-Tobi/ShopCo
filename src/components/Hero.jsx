@@ -8,7 +8,7 @@ import {
   SmallStar,
   Versace,
   Zara,
-} from "./assets";
+} from "./utils/assets";
 
 const Hero = () => {
   return (

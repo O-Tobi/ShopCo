@@ -1,4 +1,4 @@
-import { Cancel } from "../assets";
+import { Cancel } from "../../utils/assets";
 
 const Cta = () => {
     return (

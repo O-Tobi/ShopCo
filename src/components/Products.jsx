@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Rating } from "./assets";
+import { Rating } from "./utils/assets";
 
 const Product = ({
   productName,
