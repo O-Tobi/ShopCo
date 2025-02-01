@@ -28,6 +28,15 @@ import fm from "./../assets/formal.png";
 import pty from "./../assets/party.png";
 import gym from "./../assets/gym.png";
 import chk from "./../assets/check.svg";
+import tw from "./../assets/twitter.svg";
+import fb from "./../assets/facebook.svg";
+import ig from "./../assets/instagram.svg";
+import gh from "./../assets/github.svg";
+import vs from "./../assets/visa.svg";
+import mc from "./../assets/mastercard.svg";
+import pp from "./../assets/paypal.svg";
+import ap from "./../assets/applepay.svg";
+import gp from "./../assets/googlepay.svg";
 
 
 
@@ -65,3 +74,12 @@ export const Formal = fm;
 export const Party = pty;
 export const Gym = gym;
 export const Check = chk;
+export const Twitter = tw;
+export const Facebook = fb;
+export const Instagram = ig;
+export const Github = gh;
+export const Visa = vs;
+export const MasterCard = mc;
+export const Paypal = pp;
+export const ApplePay = ap;
+export const GooglePay = gp;
