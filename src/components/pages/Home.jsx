@@ -86,13 +86,13 @@ const Home = () => {
 
       {/* browse by dress style here */}
 
-      <div className="mx-[45px] bg-whiteHeroBg p-16 rounded-[40px] mb-24">
-        <h2 className="font-heading text-5xl text-center mb-20">
+      <div className="mx-[5px] lg:mx-[45px] bg-whiteHeroBg p-4 lg:p-16 rounded-[40px] mb-24">
+        <h2 className="font-heading text-[30px] lg:text-5xl text-center  mb-[10px] lg:mb-20">
           BROWSE BY DRESS STYLE
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           <div
-            className="flex rounded-[20px] w-[407px] h-[289px] pt-8 pl-8"
+            className="flex rounded-[20px] w-[310px] h-[190px]  lg:w-[407px] lg:h-[289px] pt-6 pl-6 lg:pt-8 lg:pl-8"
             style={{
               backgroundImage: `url(${Casual})`,
               backgroundSize: "cover",
@@ -100,11 +100,11 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-4xl font-bold text-left">Casual</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Casual</h3>
           </div>
 
           <div
-            className="flex rounded-[20px] w-[684px] h-[289px] pt-8 pl-8"
+            className="flex rounded-[20px] w-[310px] h-[190px] md:w-[400px] lg:w-[684px] lg:h-[289px] pt-8 pl-8"
             style={{
               backgroundImage: `url(${Formal})`,
               backgroundSize: "cover",
@@ -112,11 +112,11 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-4xl font-bold text-left">Formal</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Formal</h3>
           </div>
 
           <div
-            className="flex rounded-[20px] w-[684px] h-[289px] pt-8 pl-8"
+            className="flex rounded-[20px] w-[310px] h-[190px] md:w-[400px] lg:w-[684px] lg:h-[289px] pt-8 pl-8"
             style={{
               backgroundImage: `url(${Party})`,
               backgroundSize: "cover",
@@ -124,11 +124,11 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-4xl font-bold text-left">Party</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Party</h3>
           </div>
 
           <div
-            className="flex rounded-[20px] w-[407px] h-[289px] pt-8 pl-8"
+            className="flex rounded-[20px] w-[310px] h-[190px] lg:w-[407px] lg:h-[289px] pt-6 pl-6 lg:pt-8 lg:pl-8"
             style={{
               backgroundImage: `url(${Gym})`,
               backgroundSize: "cover",
@@ -136,7 +136,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-4xl font-bold text-left">Gym</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Gym</h3>
           </div>
         </div>
       </div>
