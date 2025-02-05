@@ -86,7 +86,7 @@ const Home = () => {
 
       {/* browse by dress style here */}
 
-      <div className="mx-[5px] lg:mx-[45px] bg-whiteHeroBg p-4 lg:p-16 rounded-[40px] mb-24">
+      <div className="mx-[5px] lg:mx-[45px] bg-whiteHeroBg p-4 lg:p-16 rounded-[40px] mb-12 lg:mb-24">
         <h2 className="font-heading text-[30px] lg:text-5xl text-center  mb-[10px] lg:mb-20">
           BROWSE BY DRESS STYLE
         </h2>
@@ -143,9 +143,9 @@ const Home = () => {
 
       {/* customers review here */}
       <div className="mb-16">
-        <div className="bp flex justify-between">
-          <h2 className="font-heading text-5xl my-16 ">OUR HAPPY CUSTOMERS</h2>
-          <div className="flex items-center gap-4">
+        <div className="px-[10px] lg:px-[45px] flex justify-between mb-6 lg:my-16">
+          <h2 className="font-heading text-[28px] lg:text-5xl flex-1">OUR HAPPY CUSTOMERS</h2>
+          <div className="flex pb-2 items-end gap-2 lg:gap-4">
             <a>
               <img src={ArrowLeft} />
             </a>
