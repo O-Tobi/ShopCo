@@ -30,7 +30,7 @@ const Hero = () => {
             Shop Now
           </button>{" "}
           <div className="py-6 z-8">
-            <ul className="flex flex-wrap justify-center items-center gap-4 md:gap-2 lg:gap-8">
+            <ul className="flex flex-wrap justify-center items-center gap-7 md:gap-2 lg:gap-8">
               <li>
                 <h2 className="text-[24px] font-bold leading-8 lg:text-[40px] lg:font-bold lg:leading-10">
                   200+
@@ -64,13 +64,13 @@ const Hero = () => {
         {/* the left section starts here */}
         <div className="">
           <div className="flex justify-center items-center relative">
-            <img src={SmallStar} className="absolute left-2 z-10" />
+            <img src={SmallStar} className="w-[40px] h-[40px] lg:w-[56px] lg:h-[56px] absolute left-1 lg:left-2 z-10" />
 
             <img src={HeroImg} className="h-[400px] lg:h-[663px]  z-0" />
 
             <img
               src={BigStar}
-              className="absolute bottom-0 right-6 top-[100px] z-10"
+              className="w-[60px] h-[60px] lg:w-[104px] lg:h-[104px] absolute bottom-0 right-3 top-[40px] lg:right-6 lg:top-[100px] z-10"
             />
           </div>
         </div>
