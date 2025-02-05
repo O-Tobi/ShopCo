@@ -93,10 +93,11 @@ const Hero = () => {
           </li>
 
           {/* Bottom row on small screens, merged into same row in md+ */}
-          <li className="w-1/2 md:w-auto flex justify-center mt-4 md:mt-0">
+          <li className="mx-2 md:mx-0 md:w-auto flex justify-center mt-4 md:mt-0">
             <img src={Prada} className="h-[18px] lg:h-[38px]" />
           </li>
-          <li className="w-1/2 md:w-auto flex justify-center mt-4 md:mt-0">
+
+          <li className="mx-2 md:w-auto flex justify-center mt-4 md:mt-0">
             <img src={CalvinKlein} className="h-[18px] lg:h-[38px]" />
           </li>
         </ul>
