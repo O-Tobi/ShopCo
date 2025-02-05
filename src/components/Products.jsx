@@ -9,30 +9,30 @@ const Product = ({
   discount,
 }) => {
   return (
-    <div>
+    <div className="carousel-item">
       <div className="flex flex-col mx-2">
         <div className="mb-4">
-          <img src={productImage} alt={productName} className="h-[298px]" />
+          <img src={productImage} alt={productName} className="h-[200px] lg:h-[298px]" />
         </div>
         <div className="mb-4">
-          <p className="font-bold text-xl mb-2">{productName}</p>
+          <p className="font-bold text-[16px] lg:text-xl mb-2">{productName}</p>
           <div className="flex mb-2">
             {[...Array(5)].map((_, i) => (
               <img key={i} src={Rating} alt="star rating" />
             ))}
-            <p>
+            <p className="text-[12px]">
               4.5/<span className="opacity-40">5</span>
             </p>
           </div>
           <div className="flex gap-[10px]">
-            <h2 className="font-bold text-2xl">${productPrice}</h2>
+            <h2 className="font-bold  text-[20px] lg:text-2xl">${productPrice}</h2>
             {oldPrice && (
               <div className="flex justify-center items-center gap-[10px]">
-                <h2 className="font-bold text-2xl opacity-40 line-through">
+                <h2 className="font-bold text-[20px] lg:text-2xl opacity-40 line-through">
                   ${oldPrice}
                 </h2>
                 <div className=" bg-discountbg rounded-full px-[14px] py-[6px]">
-                  <h2 className="font-light text-xs text-discount">
+                  <h2 className="font-light text-[10px] lg:text-xs text-discount">
                     {discount}%
                   </h2>
                 </div>

@@ -24,10 +24,10 @@ const Home = () => {
 
       {/* products here */}
       <div>
-        <h2 className="text-5xl font-extrabold text-center mt-20 mb-10">
+        <h2 className="text-[32px] lg:text-5xl font-extrabold text-center mt-14 lg:mt-20 mb-10">
           NEW ARRIVALS
         </h2>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center carousel">
           {/* product cards here */}
           {productList.slice(0, 4).map((items, id) => (
             <Product
@@ -41,8 +41,8 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="flex justify-center m-12 ">
-          <button className="btn font-light text-black bg-white rounded-full px-[3.375rem] py-[1rem] w-[13.625rem]">
+        <div className="flex justify-center p-4 my-4 lg:m-12 ">
+          <button className="btn font-light text-black bg-white rounded-full lg:px-[3.375rem] lg:py-[1rem] w-full md:w-[13.625rem]">
             View All
           </button>
         </div>
@@ -55,10 +55,10 @@ const Home = () => {
 
       {/* top selling here */}
       <div>
-        <h2 className="text-5xl font-extrabold text-center mt-20 mb-10">
+        <h2 className="text-[32px] lg:text-5xl font-extrabold text-center mt-14 lg:mt-20 mb-10">
           TOP SELLING
         </h2>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center carousel">
           {/* product cards here */}
           {productList.slice(-4).map((items, id) => (
             <Product
@@ -72,8 +72,8 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="flex justify-center m-12 ">
-          <button className="btn font-light text-black bg-white rounded-full px-[3.375rem] py-[1rem] w-[13.625rem]">
+        <div className="flex justify-center p-4 my-4 lg:m-12 ">
+          <button className="btn font-light text-black bg-white rounded-full lg:px-[3.375rem] lg:py-[1rem] w-full md:w-[13.625rem]">
             View All
           </button>
         </div>
