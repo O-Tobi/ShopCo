@@ -42,6 +42,7 @@ import ar from "./../../assets/arrowright.svg";
 import al from "./../../assets/arrowleft.svg";
 import hbg from "./../../assets/burger.svg";
 import hps from "./../../assets/homepagesearch.svg";
+import sml from "./../../assets/smline.svg";
 
 
 
@@ -95,3 +96,4 @@ export const ArrowRight = ar;
 export const ArrowLeft = al;
 export const Hamburger = hbg;
 export const HomepageSearch = hps;
+export const SmLine = sml;

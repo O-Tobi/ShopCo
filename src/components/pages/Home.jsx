@@ -13,6 +13,7 @@ import {
   HorizontalLine,
   Party,
   Rating,
+  SmLine,
 } from "../utils/assets";
 import Footer from "../Layouts/footer/Footer";
 
@@ -49,7 +50,11 @@ const Home = () => {
       </div>
 
       {/* horizontal line here */}
-      <div className="flex justify-center">
+      <div className="flex justify-center md:hidden p-4">
+        <img src={SmLine} alt="horizontal line" />
+      </div>
+
+      <div className="flex justify-center md:block">
         <img src={HorizontalLine} alt="horizontal line" />
       </div>
 
