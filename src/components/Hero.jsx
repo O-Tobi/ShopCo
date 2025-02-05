@@ -15,12 +15,12 @@ const Hero = () => {
     <>
       <div className="flex flex-wrap justify-center items-center gap-0 lg:gap-[4rem]  bg-whiteHeroBg w-screen">
         {/* the right section starts here */}
-        <div className="flex flex-col items-center md:items-start px-[20px] md:bp lg:my-12">
+        <div className="flex flex-col items-center md:items-start md:w-6/12 px-[10px] lg:px-[20px] lg:bp lg:my-12">
           <div>
-            <h1 className="font-heading text-[2.25rem] lg:text-[4rem] leading-none text-left">
+            <h1 className="font-heading text-[2rem] lg:text-[4rem] leading-none text-left">
               FIND CLOTHES <br /> THAT MATCHES <br /> YOUR STYLE
             </h1>
-            <p className="text-primary opacity-[60%] leading-5 py-6 text-[.875rem] md:text-[1rem] ">
+            <p className="text-primary opacity-[60%] leading-5 py-6 text-[.875rem] lg:text-[1rem] ">
               Browse through our diverse range of meticulously crafted garments,
               designed <br /> to bring out your individuality and cater to your
               sense of style.
@@ -30,20 +30,32 @@ const Hero = () => {
             Shop Now
           </button>{" "}
           <div className="py-6 z-8">
-            <ul className="flex flex-wrap justify-center items-center gap-4 lg:gap-8">
+            <ul className="flex flex-wrap justify-center items-center gap-4 md:gap-2 lg:gap-8">
               <li>
-                <h2 className="text-[24px] font-bold leading-8 md:text-[40px] md:font-bold md:leading-10">200+</h2>
-                <p className="text-[12px] text-black/60 lg:text-[16px]">International Brands</p>
+                <h2 className="text-[24px] font-bold leading-8 lg:text-[40px] lg:font-bold lg:leading-10">
+                  200+
+                </h2>
+                <p className="text-[12px] text-black/60 lg:text-[16px]">
+                  International Brands
+                </p>
               </li>
               <img src={Line} />
               <li>
-                <h2 className="text-[24px] font-bold leading-8 md:text-[40px] md:font-bold md:leading-10">2,000+</h2>
-                <p className="text-[12px] text-black/60 lg:text-[16px]">High-Quality Products</p>
+                <h2 className="text-[24px] font-bold leading-8 lg:text-[40px] lg:font-bold lg:leading-10">
+                  2,000+
+                </h2>
+                <p className="text-[12px] text-black/60 lg:text-[16px]">
+                  High-Quality Products
+                </p>
               </li>
-              <img src={Line} className="hidden lg:block" />
+              <img src={Line} className="hidden md:block" />
               <li>
-                <h2 className="text-[24px] font-bold leading-8 md:text-[40px] md:font-bold md:leading-10">30,000+</h2>
-                <p className="text-[12px] text-black/60 lg:text-[16px]">Happy Customers</p>
+                <h2 className="text-[24px] font-bold leading-8 lg:text-[40px] lg:font-bold lg:leading-10">
+                  30,000+
+                </h2>
+                <p className="text-[12px] text-black/60 lg:text-[16px]">
+                  Happy Customers
+                </p>
               </li>
             </ul>
           </div>
