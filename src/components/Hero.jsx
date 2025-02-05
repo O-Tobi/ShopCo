@@ -13,7 +13,7 @@ import {
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center gap-0 lg:gap-[4rem]  bg-whiteHeroBg w-screen">
+      <div className="flex flex-wrap justify-center items-center gap-0 lg:gap-[4rem] pt-8  bg-whiteHeroBg w-screen">
         {/* the right section starts here */}
         <div className="flex flex-col items-center md:items-start md:w-6/12 px-[10px] lg:px-[20px] lg:bp lg:my-12">
           <div>
@@ -64,7 +64,10 @@ const Hero = () => {
         {/* the left section starts here */}
         <div className="">
           <div className="flex justify-center items-center relative">
-            <img src={SmallStar} className="w-[40px] h-[40px] lg:w-[56px] lg:h-[56px] absolute left-1 lg:left-2 z-10" />
+            <img
+              src={SmallStar}
+              className="w-[40px] h-[40px] lg:w-[56px] lg:h-[56px] absolute left-1 lg:left-2 z-10"
+            />
 
             <img src={HeroImg} className="h-[400px] lg:h-[663px]  z-0" />
 
@@ -76,26 +79,25 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bp flex justify-center items-center bg-black h-[122px]">
-        <ul className="flex justify-between w-full">
-          <li>
-            <img src={Versace} />
+      <div className="px-[18px] lg:px-[45px] flex justify-center items-center bg-black h-[146px] lg:h-[122px]">
+        <ul className="flex flex-wrap justify-center md:justify-between w-full max-w-[400px] md:max-w-full">
+          {/* Top row on small screens, all in one row on md and lg */}
+          <li className="w-1/3 md:w-auto flex justify-center">
+            <img src={Versace} className="h-[18px] lg:h-[38px]" />
+          </li>
+          <li className="w-1/3 md:w-auto flex justify-center">
+            <img src={Zara} className="h-[18px] lg:h-[38px]" />
+          </li>
+          <li className="w-1/3 md:w-auto flex justify-center">
+            <img src={Gucci} className="h-[18px] lg:h-[38px]" />
           </li>
 
-          <li>
-            <img src={Zara} />
+          {/* Bottom row on small screens, merged into same row in md+ */}
+          <li className="w-1/2 md:w-auto flex justify-center mt-4 md:mt-0">
+            <img src={Prada} className="h-[18px] lg:h-[38px]" />
           </li>
-
-          <li>
-            <img src={Gucci} />
-          </li>
-
-          <li>
-            <img src={Prada} />
-          </li>
-
-          <li>
-            <img src={CalvinKlein} />
+          <li className="w-1/2 md:w-auto flex justify-center mt-4 md:mt-0">
+            <img src={CalvinKlein} className="h-[18px] lg:h-[38px]" />
           </li>
         </ul>
       </div>
