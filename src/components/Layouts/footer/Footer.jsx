@@ -155,7 +155,7 @@ const Footer = () => {
           <img src={HorizontalLine} alt="horizontal line" />
         </div>
 
-        <div className="flex flex-col md:flex-row md:justify-between items-center gap-3">
+        <div className="flex flex-col md:flex-row md:justify-between items-center gap-3 my-[-40px] md:m-0">
           <p className="text-[.875rem] text-black/60">
             Shop.co © 2000-2023, All Rights Reserved
           </p>
