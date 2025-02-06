@@ -4,20 +4,20 @@ const Footer = () => {
     return (
         <footer className="relative">
           {/* black background starts here */}
-          <div className="absolute top-[-5.3125rem] left-0 right-0 z-50 flex items-center justify-between mx-[2.8125rem] rounded-[1.25rem] px-16 py-[2.25rem] bg-black">
-            <h2 className="font-heading text-[2.5rem] leading-[2.8125rem] w-[34.4375rem] text-white text-wrap">
+          <div className="absolute top-[-5.3125rem] left-0 right-0 z-50 flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between  mx-4 lg:mx-[2.8125rem] rounded-[1.25rem] px-4 md:px-16 md:py-[2.25rem] bg-black">
+            <h2 className="font-heading leading-tight text-[25px] mx-2 my-4 lg:m-0 lg:text-[2.5rem] lg:leading-[2.8125rem] lg:w-[34.4375rem] text-white text-wrap">
               STAY UP TO DATE ABOUT OUR LATEST OFFERS
             </h2>
-            <div className="flex flex-col gap-[.875rem]">
-              <label className="input h-[3rem] bg-secondaryHero rounded-[3.875rem] flex items-center gap-3 px-4 py-3 w-[21.8125rem]">
+            <div className="flex flex-col  justify-center items-center my-6 md:my-0 gap-3 md:gap-[.875rem]">
+              <label className="input h-[48px] lg:h-[3rem] bg-secondaryHero rounded-full flex items-center gap-3 px-4 py-3 w-[250px] lg:w-[21.8125rem]">
                 <img src={Email} />
                 <input
                   type="text"
-                  className="grow rounded-[3.875rem]"
+                  className="grow rounded-[3.875rem] text-[14px] lg:text-[16px]"
                   placeholder="Enter your email address"
                 />
               </label>
-              <button className="btn font-medium text-[1rem] text-black bg-whiteFont rounded-full px-[1rem] py-[.75rem] w-[21.8125rem]">
+              <button className="btn font-medium h-[40px] lg:h-[3rem] text-[14px] lg:text-[1rem] text-black bg-whiteFont rounded-full px-4 py-3 w-[250px] lg:w-[21.8125rem]">
                 Subscribe to Newsletter
               </button>
             </div>

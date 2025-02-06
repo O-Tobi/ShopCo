@@ -157,20 +157,20 @@ const Home = () => {
         </div>
 
         {/* rating carousels goes here */}
-        <div className="carousel carousel-center rounded-box gap-4">
+        <div className="carousel  rounded-box gap-4">
           <div className="carousel-item">
-            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+            <div className="flex-wrap border-2 w-[358px] h-[186px] lg:w-[400px] lg:h-[240px] p-[24px] lg:px-[32px] lg:py-[28px] rounded-[20px]">
               <div className="flex gap-[6.49px] mb-[15px]">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Rating} alt="star rating" />
                 ))}
               </div>
               <div className="flex gap-1 mb-[12px]">
-                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <h4 className="font-bold text-[16px] lg:text-xl">Sarah M.</h4>
                 <img src={Check} alt="check" />
               </div>
 
-              <p className="text-[16px] opacity-60">
+              <p className="text-[14px] lg:text-[16px] opacity-60">
                 &ldquo;I&rsquo;m blown away by the quality and style of the
                 clothes I received from Shop.co. From casual wear to elegant
                 dresses, every piece I&rsquo;ve bought has exceeded my
@@ -180,18 +180,18 @@ const Home = () => {
           </div>
 
           <div className="carousel-item">
-            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+            <div className="flex-wrap border-2 w-[358px] h-[186px] lg:w-[400px] lg:h-[240px] p-[24px] lg:px-[32px] lg:py-[28px] rounded-[20px]">
               <div className="flex gap-[6.49px] mb-[15px]">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Rating} alt="star rating" />
                 ))}
               </div>
               <div className="flex gap-1 mb-[12px]">
-                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <h4 className="font-bold text-[16px] lg:text-xl">Sarah M.</h4>
                 <img src={Check} alt="check" />
               </div>
 
-              <p className="text-[16px] opacity-60">
+              <p className="text-[14px] lg:text-[16px] opacity-60">
                 &ldquo;I&rsquo;m blown away by the quality and style of the
                 clothes I received from Shop.co. From casual wear to elegant
                 dresses, every piece I&rsquo;ve bought has exceeded my
@@ -201,18 +201,18 @@ const Home = () => {
           </div>
 
           <div className="carousel-item">
-            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+            <div className="flex-wrap border-2 w-[358px] h-[186px] lg:w-[400px] lg:h-[240px] p-[24px] lg:px-[32px] lg:py-[28px] rounded-[20px]">
               <div className="flex gap-[6.49px] mb-[15px]">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Rating} alt="star rating" />
                 ))}
               </div>
               <div className="flex gap-1 mb-[12px]">
-                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <h4 className="font-bold text-[16px] lg:text-xl">Sarah M.</h4>
                 <img src={Check} alt="check" />
               </div>
 
-              <p className="text-[16px] opacity-60">
+              <p className="text-[14px] lg:text-[16px] opacity-60">
                 &ldquo;I&rsquo;m blown away by the quality and style of the
                 clothes I received from Shop.co. From casual wear to elegant
                 dresses, every piece I&rsquo;ve bought has exceeded my
@@ -222,18 +222,18 @@ const Home = () => {
           </div>
 
           <div className="carousel-item">
-            <div className="flex-wrap border-2 w-[400px] h-[240px] px-[32px] py-[28px] rounded-[20px]">
+            <div className="flex-wrap border-2 w-[358px] h-[186px] lg:w-[400px] lg:h-[240px] p-[24px] lg:px-[32px] lg:py-[28px] rounded-[20px]">
               <div className="flex gap-[6.49px] mb-[15px]">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Rating} alt="star rating" />
                 ))}
               </div>
               <div className="flex gap-1 mb-[12px]">
-                <h4 className="font-bold text-xl">Sarah M.</h4>
+                <h4 className="font-bold text-[16px] lg:text-xl">Sarah M.</h4>
                 <img src={Check} alt="check" />
               </div>
 
-              <p className="text-[16px] opacity-60">
+              <p className="text-[14px] lg:text-[16px] opacity-60">
                 &ldquo;I&rsquo;m blown away by the quality and style of the
                 clothes I received from Shop.co. From casual wear to elegant
                 dresses, every piece I&rsquo;ve bought has exceeded my
