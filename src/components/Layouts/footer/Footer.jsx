@@ -8,6 +8,7 @@ import {
   Instagram,
   MasterCard,
   Paypal,
+  SmLine,
   Twitter,
   Visa,
 } from "../../utils/assets";
@@ -39,8 +40,8 @@ const Footer = () => {
       <div className="bg-whiteHeroBg pt-[200px] px-[10px] md:pt-[150px] md:px-[45px]">
         {/* footer content here */}
         <div className="flex flex-wrap justify-between  items-center">
-          <div className="flex flex-col gap-[2.1875rem] w-[15.5rem] my-6 md:my-0">
-            <div className="flex flex-col  gap-[1.5625rem] md:w-full">
+          <div className="flex flex-col gap-2 md:gap-[2.1875rem] w-[15.5rem] my-6 md:my-0">
+            <div className="flex flex-col  gap-2 md:gap-[1.5625rem] md:w-full">
               <h2 className="text-[2.0906rem] font-heading">SHOP.CO</h2>
               <p className="text-black/60 text-[.875rem] leading-[1.375rem]">
                 We have clothes that suit your style and which you’re proud to
@@ -145,15 +146,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 mb-6">
+        {/* horizontal line here */}
+        <div className="flex justify-center  md:hidden p-4">
+          <img src={SmLine} alt="horizontal line" />
+        </div>
+
+        <div className="flex justify-center my-8 md:block">
           <img src={HorizontalLine} alt="horizontal line" />
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row md:justify-between items-center gap-3">
           <p className="text-[.875rem] text-black/60">
             Shop.co © 2000-2023, All Rights Reserved
           </p>
-          <div className="flex">
+          <div className="flex gap-[0px]">
             <a>
               <img src={Visa} alt="Visa" />
             </a>
