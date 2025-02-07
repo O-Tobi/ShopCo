@@ -1,5 +1,4 @@
 import Hero from "../Hero";
-import HeaderComponent from "../Layouts/header/HeaderComponent";
 import Product from "../Products";
 import { productList } from "../utils/constants";
 
@@ -15,12 +14,11 @@ import {
   Rating,
   SmLine,
 } from "../utils/assets";
-import Footer from "../Layouts/footer/Footer";
+
 
 const Home = () => {
   return (
     <div>
-      <HeaderComponent />
       <Hero />
 
       {/* products here */}
@@ -100,7 +98,9 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Casual</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">
+              Casual
+            </h3>
           </div>
 
           <div
@@ -112,7 +112,9 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Formal</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">
+              Formal
+            </h3>
           </div>
 
           <div
@@ -124,7 +126,9 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h3 className="text-[24px] lg:text-4xl font-bold text-left">Party</h3>
+            <h3 className="text-[24px] lg:text-4xl font-bold text-left">
+              Party
+            </h3>
           </div>
 
           <div
@@ -144,7 +148,9 @@ const Home = () => {
       {/* customers review here */}
       <div className="mb-16">
         <div className="px-[10px] lg:px-[45px] flex justify-between mb-6 lg:my-16">
-          <h2 className="font-heading text-[28px] lg:text-5xl flex-1">OUR HAPPY CUSTOMERS</h2>
+          <h2 className="font-heading text-[28px] lg:text-5xl flex-1">
+            OUR HAPPY CUSTOMERS
+          </h2>
           <div className="flex pb-2 items-end gap-2 lg:gap-4">
             <a>
               <img src={ArrowLeft} />
@@ -249,9 +255,6 @@ const Home = () => {
             />
           </div>
         </div>
-
-        {/* footer here */}
-        <Footer />
       </div>
     </div>
   );
