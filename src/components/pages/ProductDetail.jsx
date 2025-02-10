@@ -10,12 +10,12 @@ import {
 
 const ProductDetail = () => {
   return (
-    <div className="mb-[100px]">
-      <div>
+    <div className="mb-[100px] container px-[45px]">
+      <div className="mb-4">
         <img src={HorizontalLine} />
       </div>
-      <div className="breadcrumbs">
-        <ul>
+      <div className="breadcrumbs mb-6">
+        <ul className=" text-[16px] text-black/60">
           <li>
             <a>Home</a>
           </li>
@@ -25,17 +25,17 @@ const ProductDetail = () => {
           <li>
             <a>Men</a>
           </li>
-          <li>
+          <li className="text-black">
             <a>T-Shirts</a>
           </li>
         </ul>
       </div>
 
       {/* product details starts here */}
-      <div>
+      <div className="flex gap-8">
         {/* left side for images here */}
-        <div className="product images">
-          <div className="small-img">
+        <div className="flex gap-3">
+          <div className="flex flex-col gap-3">
             <img src={SmallProduct1} />
             <img src={SmallProduct2} />
             <img src={SmallProduct3} />
@@ -48,16 +48,28 @@ const ProductDetail = () => {
 
         {/* right side for product description starts here */}
         <div>
-          <h1>ONE LIFE GRAPHIC T-SHIRT</h1>
-          <div className="flex gap-[6.49px] mb-[15px]">
-            {[...Array(5)].map((_, i) => (
-              <img key={i} src={Rating} alt="star rating" />
-            ))}
-          </div>
-          <div className="price">
-            <h2>$260</h2>
-            <h2>$300</h2>
-            <h2 className="discount">-40%</h2>
+          <div className="flex flex-col gap-2">
+            <h1 className="font-heading text-[40px] ">
+              ONE LIFE GRAPHIC T-SHIRT
+            </h1>
+            <div className="flex items-center gap-3 text-[16px]">
+              <div className="flex gap-[6.49px]">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={Rating} alt="star rating" />
+                ))}
+              </div>
+              <p>4.5/<span className="text-black/60">5</span></p>
+            </div>
+
+            <div className="flex items-center gap-[10px]">
+              <h2 className="font-bold  text-[20px] lg:text-[32px]">$260</h2>
+              <h2 className="font-bold  text-[20px] lg:text-[32px] opacity-40 line-through">$300</h2>
+              <div className="flex justify-center items-center bg-discountbg rounded-full px-[14px] py-[6px] h-[34px] w-[72px]">
+                  <h2 className="font-light text-[10px] lg:text-[16px] text-discount">
+                    -40%
+                  </h2>
+                </div>
+            </div>
           </div>
 
           <p>
