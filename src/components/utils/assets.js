@@ -50,6 +50,7 @@ import bgp from "./../../assets/bgProduct.png";
 import mrk from "./../../assets/mark.svg";
 import mns from "./../../assets/minus.svg";
 import add from "./../../assets/add.svg";
+import fil from "./../../assets/filter.svg";
 
 
 
@@ -111,3 +112,4 @@ export const BigProduct = bgp;
 export const ProductCheck = mrk;
 export const Minus = mns;
 export const Add = add;
+export const Filter = fil;

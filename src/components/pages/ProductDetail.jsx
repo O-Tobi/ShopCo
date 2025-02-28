@@ -8,6 +8,7 @@ import {
   ProductCheck,
   Minus,
   Add,
+  Filter,
 } from "../utils/assets";
 
 const ProductDetail = () => {
@@ -38,18 +39,18 @@ const ProductDetail = () => {
         {/* left side for images here */}
         <div className="flex gap-3">
           <div className="flex flex-col gap-7">
-            <img src={SmallProduct1} className="w-[152px] h-[158px]"/>
-            <img src={SmallProduct2} className="w-[152px] h-[158px]"/>
-            <img src={SmallProduct3} className="w-[152px] h-[158px]"/>
+            <img src={SmallProduct1} className="w-[152px] h-[158px]" />
+            <img src={SmallProduct2} className="w-[152px] h-[158px]" />
+            <img src={SmallProduct3} className="w-[152px] h-[158px]" />
           </div>
 
           <div className="big-img">
-            <img src={BigProduct} className="w-[444px] h-[530px]"/>
+            <img src={BigProduct} className="w-[444px] h-[530px]" />
           </div>
         </div>
 
         {/* right side for product description starts here */}
-        <div >
+        <div>
           <div className="flex flex-col  my-0">
             <h1 className="font-heading text-[40px] ">
               ONE LIFE GRAPHIC T-SHIRT
@@ -123,14 +124,56 @@ const ProductDetail = () => {
 
           <div className="flex gap-[20px]">
             <div className="add flex justify-between  w-[170px] h-[52px] px-[20px] py-[16px] bg-whiteHeroBg rounded-[62px]">
-              <div className="minus"> <img src={Minus} alt=""/> </div>
+              <div className="minus">
+                {" "}
+                <img src={Minus} alt="" />{" "}
+              </div>
               <div className="number">1</div>
-              <div className="plus"> <img src={Add} alt=""/> </div>
+              <div className="plus">
+                {" "}
+                <img src={Add} alt="" />{" "}
+              </div>
             </div>
 
             <div>
-              <button className="btn h-[52px] w-[400px] gap-[12px] rounded-[62px] bg-primary text-white text-[16px] font-light">Add to Cart</button>
+              <button className="btn h-[52px] w-[400px] gap-[12px] rounded-[62px] bg-primary text-white text-[16px] font-light">
+                Add to Cart
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Product Rating, Rating & Reviews and FAQs starts here */}
+      <div className="parent mt-[80px]">
+        <div className="topnav flex justify-between items-center ">
+          <div className="productdetails w-[513px] flex flex-col justify-center items-center gap-[24px]">
+            <p className="opacity-60">Product Details</p>
+            <hr className="border-1 border-primary opacity-10 w-full" />
+          </div>
+
+          <div className="ratingsnreview w-[414px] flex flex-col justify-center items-center gap-[24px]">
+            <p>Rating & Reviews</p>
+            <hr className="border-2 border-primary w-full" />
+          </div>
+
+          <div className="faq w-[513px] flex flex-col justify-center items-center gap-[24px]">
+            <p className="opacity-60">FAQs</p>
+            <hr className="border-1 border-primary opacity-10 w-full" />
+          </div>
+        </div>
+
+        {/* all reviews and filter here */}
+        <div className="review flex justify-between mt-[32px]">
+          <div className="allReviews flex items-center gap-(8px)">
+            <h2 className="text-[24px] font-bold">All Reviews</h2>
+            <p className="opacity-60">(451)</p>
+          </div>
+
+          <div className="filterButtons flex gap-[10px]">
+            <btn className="filter bg-whiteHeroBg px-[20px] h-[48px] flex items-center justify-center py-[16px]  rounded-[62px]"><img src={Filter} alt=""/></btn>
+            <btn className="latest">Latest</btn>
+            <btn className="writeAReview">Write a Review</btn>
           </div>
         </div>
       </div>
