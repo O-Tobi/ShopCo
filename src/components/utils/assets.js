@@ -47,6 +47,7 @@ import smp1 from "./../../assets/smProduct1.png";
 import smp2 from "./../../assets/smProduct2.png";
 import smp3 from "./../../assets/smProduct3.png";
 import bgp from "./../../assets/bgProduct.png";
+import mrk from "./../../assets/mark.svg";
 
 
 
@@ -106,3 +107,4 @@ export const SmallProduct1 = smp1;
 export const SmallProduct2 = smp2;
 export const SmallProduct3 = smp3;
 export const BigProduct = bgp;
+export const ProductCheck = mrk;

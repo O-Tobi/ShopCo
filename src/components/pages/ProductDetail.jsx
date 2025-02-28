@@ -6,6 +6,7 @@ import {
   Rating,
   SmLine,
   HorizontalLine,
+  ProductCheck,
 } from "../utils/assets";
 
 const ProductDetail = () => {
@@ -58,32 +59,36 @@ const ProductDetail = () => {
                   <img key={i} src={Rating} alt="star rating" />
                 ))}
               </div>
-              <p>4.5/<span className="text-black/60">5</span></p>
+              <p>
+                4.5/<span className="text-black/60">5</span>
+              </p>
             </div>
 
             <div className="flex items-center gap-[10px]">
               <h2 className="font-bold  text-[20px] lg:text-[32px]">$260</h2>
-              <h2 className="font-bold  text-[20px] lg:text-[32px] opacity-40 line-through">$300</h2>
+              <h2 className="font-bold  text-[20px] lg:text-[32px] opacity-40 line-through">
+                $300
+              </h2>
               <div className="flex justify-center items-center bg-discountbg rounded-full px-[14px] py-[6px] h-[34px] w-[72px]">
-                  <h2 className="font-light text-[10px] lg:text-[16px] text-discount">
-                    -40%
-                  </h2>
-                </div>
+                <h2 className="font-light text-[10px] lg:text-[16px] text-discount">
+                  -40%
+                </h2>
+              </div>
             </div>
           </div>
 
-          <p>
+          <p className="opacity-60 w-[590px] leading-[22px] my-[24px]">
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
 
-          <div className="line">
-            <img src={SmLine} />
+          <div className="line w-[590px] my-[24px]">
+            <hr />
           </div>
 
-          <p>Select Colors</p>
-          <div className="colors">
-            <div className="brown">brown</div>
+          <p className="opacity-60 mb-[16px]">Select Colors</p>
+          <div className="colors flex gap-[16px]">
+            <div className="brown flex justify-center items-center w-[37px] h-[37px] rounded-full bg-[#4F4631]"> <img src={ProductCheck} alt=""/> </div>
             <div className="green">green</div>
             <div className="purple">purple</div>
           </div>
