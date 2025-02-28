@@ -37,20 +37,20 @@ const ProductDetail = () => {
       <div className="flex gap-8">
         {/* left side for images here */}
         <div className="flex gap-3">
-          <div className="flex flex-col gap-3">
-            <img src={SmallProduct1} />
-            <img src={SmallProduct2} />
-            <img src={SmallProduct3} />
+          <div className="flex flex-col gap-7">
+            <img src={SmallProduct1} className="w-[152px] h-[158px]"/>
+            <img src={SmallProduct2} className="w-[152px] h-[158px]"/>
+            <img src={SmallProduct3} className="w-[152px] h-[158px]"/>
           </div>
 
           <div className="big-img">
-            <img src={BigProduct} />
+            <img src={BigProduct} className="w-[444px] h-[530px]"/>
           </div>
         </div>
 
         {/* right side for product description starts here */}
-        <div>
-          <div className="flex flex-col gap-2">
+        <div >
+          <div className="flex flex-col  my-0">
             <h1 className="font-heading text-[40px] ">
               ONE LIFE GRAPHIC T-SHIRT
             </h1>
@@ -78,17 +78,17 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          <p className="opacity-60 w-[590px] leading-[22px] my-[24px]">
+          <p className="opacity-60 w-[590px] leading-[22px] my-[20px]">
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
 
-          <div className="line w-[590px] my-[24px]">
+          <div className="line w-[590px] my-[20px]">
             <hr />
           </div>
 
           <p className=" mb-[16px]">Select Colors</p>
-          <div className="colors flex gap-[16px]">
+          <div className="colors flex gap-[16px] m-0">
             <div className="brown flex justify-center items-center w-[37px] h-[37px] rounded-full bg-[#4F4631]">
               {" "}
               <img src={ProductCheck} alt="" />{" "}
@@ -97,12 +97,12 @@ const ProductDetail = () => {
             <div className="purple flex justify-center items-center w-[37px] h-[37px] rounded-full bg-[#31344F]"></div>
           </div>
 
-          <div className="line w-[590px] my-[24px]">
+          <div className="line w-[590px] my-[20px]">
             <hr />
           </div>
 
           <p className=" mb-[16px]">Choose Size</p>
-          <div className="size flex gap-[12px]">
+          <div className="size flex gap-[12px] m-0">
             <button className="small  h-[46px] gap-[12px] px-[24px] py-[12px] rounded-[62px] bg-[#F0F0F0] text-[16px] opacity-60">
               Small
             </button>
@@ -117,11 +117,11 @@ const ProductDetail = () => {
             </button>
           </div>
 
-          <div className="line w-[590px] my-[24px]">
+          <div className="line w-[590px] my-[20px]">
             <hr />
           </div>
 
-          <div className="flex">
+          <div className="flex gap-[20px]">
             <div className="add flex justify-between  w-[170px] h-[52px] px-[20px] py-[16px] bg-whiteHeroBg rounded-[62px]">
               <div className="minus"> <img src={Minus} alt=""/> </div>
               <div className="number">1</div>
@@ -129,7 +129,7 @@ const ProductDetail = () => {
             </div>
 
             <div>
-              <button>Add to Cart</button>
+              <button className="btn h-[52px] w-[400px] gap-[12px] rounded-[62px] bg-primary text-white text-[16px] font-light">Add to Cart</button>
             </div>
           </div>
         </div>
