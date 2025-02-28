@@ -48,7 +48,8 @@ import smp2 from "./../../assets/smProduct2.png";
 import smp3 from "./../../assets/smProduct3.png";
 import bgp from "./../../assets/bgProduct.png";
 import mrk from "./../../assets/mark.svg";
-
+import mns from "./../../assets/minus.svg";
+import add from "./../../assets/add.svg";
 
 
 
@@ -108,3 +109,5 @@ export const SmallProduct2 = smp2;
 export const SmallProduct3 = smp3;
 export const BigProduct = bgp;
 export const ProductCheck = mrk;
+export const Minus = mns;
+export const Add = add;
