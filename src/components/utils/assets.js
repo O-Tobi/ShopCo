@@ -51,6 +51,8 @@ import mrk from "./../../assets/mark.svg";
 import mns from "./../../assets/minus.svg";
 import add from "./../../assets/add.svg";
 import fil from "./../../assets/filter.svg";
+import opt from "./../../assets/options.svg";
+
 
 
 
@@ -113,3 +115,4 @@ export const ProductCheck = mrk;
 export const Minus = mns;
 export const Add = add;
 export const Filter = fil;
+export const Options = opt;

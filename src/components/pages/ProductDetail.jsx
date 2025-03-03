@@ -9,6 +9,9 @@ import {
   Minus,
   Add,
   Filter,
+  Arrow,
+  Options,
+  Check,
 } from "../utils/assets";
 
 const ProductDetail = () => {
@@ -146,7 +149,7 @@ const ProductDetail = () => {
 
       {/* Product Rating, Rating & Reviews and FAQs starts here */}
       <div className="parent mt-[80px]">
-        <div className="topnav flex justify-between items-center ">
+        <div className="topnav flex justify-between items-center w-full">
           <div className="productdetails w-[513px] flex flex-col justify-center items-center gap-[24px]">
             <p className="opacity-60">Product Details</p>
             <hr className="border-1 border-primary opacity-10 w-full" />
@@ -164,16 +167,53 @@ const ProductDetail = () => {
         </div>
 
         {/* all reviews and filter here */}
-        <div className="review flex justify-between mt-[32px]">
+        <div className="review flex  justify-between mt-[32px] w-full">
           <div className="allReviews flex items-center gap-(8px)">
             <h2 className="text-[24px] font-bold">All Reviews</h2>
             <p className="opacity-60">(451)</p>
           </div>
 
           <div className="filterButtons flex gap-[10px]">
-            <btn className="filter bg-whiteHeroBg px-[20px] h-[48px] flex items-center justify-center py-[16px]  rounded-[62px]"><img src={Filter} alt=""/></btn>
-            <btn className="latest">Latest</btn>
-            <btn className="writeAReview">Write a Review</btn>
+            <btn className="filter bg-whiteHeroBg px-[20px] h-[48px] flex items-center justify-center py-[16px]  rounded-[62px]">
+              <img src={Filter} alt="" />
+            </btn>
+            <btn className="latest btn bg-whiteHeroBg flex justify-between  items-center px-[20px] py-[16px] h-[48px] w-[120px] rounded-[62px] font-medium">
+              Latest <img src={Arrow} alt="" />{" "}
+            </btn>
+            <btn className="writeAReview btn bg-primary flex justify-center  items-center px-[20px] py-[16px] h-[48px] w-[166px] rounded-[62px] font-medium text-white">
+              Write a Review
+            </btn>
+          </div>
+        </div>
+
+        <div className="customerRatinfgs">
+          <div className="container w-[610px] rounded-[20px] px-[32px] py-[28px] gap-[342px] gap-y-[24px] border-[1px] border-primary/10">
+            <div className="mb-[24px]">
+              <div className="stars flex justify-between">
+                <div className="flex gap-[7px]">
+                  {[...Array(5)].map((_, i) => (
+                    <img key={i} src={Rating} alt="star rating" />
+                  ))}
+                </div>
+                <img src={Options} alt="" />
+              </div>
+              <div className="flex items-center gap-[4px] mt-[15px] mb-[12px]">
+                <h2 className="font-bold text-[20px]">Samantha D.</h2>
+                <img src={Check} alt="" />
+              </div>
+
+              <p className="text-[16px] opacity-60">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Asperiores repudiandae obcaecati laborum, minima voluptates
+                iusto culpa nihil ab officiis sunt! Atque illo optio delectus
+                quo molestiae dolores rerum ipsa quae.
+              </p>
+            </div>
+
+            <p className="date text-[16px] opacity-60">
+              {" "}
+              Posted on August 14, 2025
+            </p>
           </div>
         </div>
       </div>
