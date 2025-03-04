@@ -13,10 +13,11 @@ import {
   Options,
   Check,
 } from "../utils/assets";
+import { RatingList } from "../utils/constants";
 
 const ProductDetail = () => {
   return (
-    <div className="mb-[100px] container px-[45px]">
+    <div className="mb-[100px]  px-[45px]">
       <div className="mb-4">
         <img src={HorizontalLine} />
       </div>
@@ -148,7 +149,8 @@ const ProductDetail = () => {
       </div>
 
       {/* Product Rating, Rating & Reviews and FAQs starts here */}
-      <div className="parent mt-[80px]">
+
+      <div className="parent mt-[80px] w-full">
         <div className="topnav flex justify-between items-center w-full">
           <div className="productdetails w-[513px] flex flex-col justify-center items-center gap-[24px]">
             <p className="opacity-60">Product Details</p>
@@ -180,41 +182,40 @@ const ProductDetail = () => {
             <btn className="latest btn bg-whiteHeroBg flex justify-between  items-center px-[20px] py-[16px] h-[48px] w-[120px] rounded-[62px] font-medium">
               Latest <img src={Arrow} alt="" />{" "}
             </btn>
-            <btn className="writeAReview btn bg-primary flex justify-center  items-center px-[20px] py-[16px] h-[48px] w-[166px] rounded-[62px] font-medium text-white">
+            <button className="writeAReview btn bg-primary flex justify-center  items-center px-[20px] py-[16px] h-[48px] w-[166px] rounded-[62px] font-medium text-white">
               Write a Review
-            </btn>
+            </button>
           </div>
         </div>
 
-        <div className="customerRatinfgs">
-          <div className="container w-[610px] rounded-[20px] px-[32px] py-[28px] gap-[342px] gap-y-[24px] border-[1px] border-primary/10">
-            <div className="mb-[24px]">
-              <div className="stars flex justify-between">
-                <div className="flex gap-[7px]">
-                  {[...Array(5)].map((_, i) => (
-                    <img key={i} src={Rating} alt="star rating" />
-                  ))}
+        <div className="flex flex-wrap gap-[20px]">
+          {RatingList.map((rl, index) => (
+            <div
+              key={index}
+              className="container w-[48%] rounded-[20px] px-[32px] py-[28px] border-[1px] border-primary/10"
+            >
+              <div className="mb-[24px]">
+                <div className="stars flex justify-between">
+                  <div className="flex gap-[7px]">
+                    {[...Array(5)].map((_, i) => (
+                      <img key={i} src={Rating} alt="star rating" />
+                    ))}
+                  </div>
+                  <img src={Options} alt="" />
                 </div>
-                <img src={Options} alt="" />
-              </div>
-              <div className="flex items-center gap-[4px] mt-[15px] mb-[12px]">
-                <h2 className="font-bold text-[20px]">Samantha D.</h2>
-                <img src={Check} alt="" />
+                <div className="flex items-center gap-[4px] mt-[15px] mb-[12px]">
+                  <h2 className="font-bold text-[20px]">{rl.name}</h2>
+                  <img src={Check} alt="" />
+                </div>
+
+                <p className="text-[16px] opacity-60">
+                  &ldquo;{rl.comment}&rdquo;
+                </p>
               </div>
 
-              <p className="text-[16px] opacity-60">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Asperiores repudiandae obcaecati laborum, minima voluptates
-                iusto culpa nihil ab officiis sunt! Atque illo optio delectus
-                quo molestiae dolores rerum ipsa quae.
-              </p>
+              <p className="date text-[16px] opacity-60">Posted on {rl.date}</p>
             </div>
-
-            <p className="date text-[16px] opacity-60">
-              {" "}
-              Posted on August 14, 2025
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </div>
