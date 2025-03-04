@@ -1,4 +1,8 @@
 import {
+  ExtraProduct1,
+  ExtraProduct2,
+  ExtraProduct3,
+  ExtraProduct4,
   Product1,
   Product2,
   Product3,
@@ -64,6 +68,38 @@ export const productList = [
     productName: "T-Shirt with Tape Details",
     price: 120,
   },
+];
+
+export const extraProductList = [
+  {
+    id: 1,
+    productImg: ExtraProduct1,
+    productName: "Polo with Contrast Trims",
+    price: 212,
+    oldPrice: 242,
+    discount: -20,
+  },
+  {
+    id: 2,
+    productImg: ExtraProduct2,
+    productName: "Gradient Graphic T-shirt",
+    price: 145,
+    
+  },
+  {
+    id: 3,
+    productImg: ExtraProduct3,
+    productName: "Polo with Tipping Details",
+    price: 180,
+  },
+  {
+    id: 4,
+    productImg: ExtraProduct4,
+    productName: "Black Striped T-shirt",
+    price: 120,
+    oldPrice: 150,
+    discount: -30,
+  }
 ];
 
 export const RatingList = [

@@ -52,6 +52,10 @@ import mns from "./../../assets/minus.svg";
 import add from "./../../assets/add.svg";
 import fil from "./../../assets/filter.svg";
 import opt from "./../../assets/options.svg";
+import ep1 from "./../../assets/extraProduct1.png";
+import ep2 from "./../../assets/extraProduct2.png";
+import ep3 from "./../../assets/extraProduct3.png";
+import ep4 from "./../../assets/extraProduct4.png";
 
 
 
@@ -116,3 +120,7 @@ export const Minus = mns;
 export const Add = add;
 export const Filter = fil;
 export const Options = opt;
+export const ExtraProduct1 = ep1;
+export const ExtraProduct2 = ep2;
+export const ExtraProduct3 = ep3;
+export const ExtraProduct4 = ep4;

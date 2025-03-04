@@ -1,3 +1,4 @@
+import Product from "../Products";
 import {
   BigProduct,
   SmallProduct1,
@@ -13,7 +14,7 @@ import {
   Options,
   Check,
 } from "../utils/assets";
-import { RatingList } from "../utils/constants";
+import { extraProductList, RatingList } from "../utils/constants";
 
 const ProductDetail = () => {
   return (
@@ -216,6 +217,26 @@ const ProductDetail = () => {
               <p className="date text-[16px] opacity-60">Posted on {rl.date}</p>
             </div>
           ))}
+        </div>
+
+        {/* top selling here */}
+        <div>
+          <h2 className="text-[32px] lg:text-5xl font-extrabold text-center mt-14 lg:mt-20 mb-10">
+            YOU MIGHT ALSO LIKE
+          </h2>
+          <div className="flex flex-row justify-center items-center carousel">
+            {/* product cards here */}
+            {extraProductList.slice(-4).map((items, id) => (
+              <Product
+                key={id}
+                productImage={items.productImg}
+                productName={items.productName}
+                productPrice={items.price}
+                oldPrice={items.oldPrice}
+                discount={items.discount}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
