@@ -17,6 +17,7 @@ import {
 import { extraProductList, RatingList } from "../utils/constants";
 
 const ProductDetail = () => {
+
   return (
     <div className="mb-[100px]  px-[16px] md:px-[45px]">
       <div className="mb-[20px] md:mb-4">
@@ -128,7 +129,7 @@ const ProductDetail = () => {
           </div>
 
           <div className="flex gap-[12px] lg:gap-[20px]">
-            <div className="add flex justify-between w-[110px] h-[44px] lg:w-[170px] lg:h-[52px] px-[20px] py-[16px] bg-whiteHeroBg rounded-[62px]">
+            <div className="add flex justify-between w-[110px] h-[44px] lg:w-[170px] lg:h-[52px] px-[16px] md:px-[20px] py-[12px] md:py-[16px] bg-whiteHeroBg rounded-[62px]">
               <div className="minus">
                 {" "}
                 <img src={Minus} alt="" className="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" />{" "}
@@ -141,7 +142,7 @@ const ProductDetail = () => {
             </div>
 
             <div>
-              <button className="btn h-[44px] w-[236px] md:h-[52px]  md:w-[400px] gap-[12px] rounded-[62px] bg-primary text-white text-[16px] font-light">
+              <button className="btn  h-[44px] w-[236px] md:h-[52px]  md:w-[400px] gap-[12px] px-[54px] py-[16px] rounded-[62px] bg-primary text-white text-[16px] font-light">
                 Add to Cart
               </button>
             </div>
@@ -153,18 +154,18 @@ const ProductDetail = () => {
 
       <div className="parent mt-[80px] w-full">
         <div className="topnav flex justify-between items-center w-full">
-          <div className="productdetails w-[513px] flex flex-col justify-center items-center gap-[24px]">
-            <p className="opacity-60">Product Details</p>
+          <div className="productdetails w-1/3 md:w-[513px] flex flex-col justify-center items-center gap-[24px]">
+            <p className="opacity-60 text-[14px] md:text-[16px]">Product Details</p>
             <hr className="border-1 border-primary opacity-10 w-full" />
           </div>
 
-          <div className="ratingsnreview w-[414px] flex flex-col justify-center items-center gap-[24px]">
-            <p>Rating & Reviews</p>
+          <div className="ratingsnreview w-1/3 md:w-[414px] flex flex-col justify-center items-center gap-[24px]">
+            <p className="text-[14px] md:text-[16px]">Reviews</p>
             <hr className="border-2 border-primary w-full" />
           </div>
 
-          <div className="faq w-[513px] flex flex-col justify-center items-center gap-[24px]">
-            <p className="opacity-60">FAQs</p>
+          <div className="faq w-1/3 md:w-[513px] flex flex-col justify-center items-center gap-[24px]">
+            <p className="opacity-60 text-[14px] md:text-[16px]">FAQs</p>
             <hr className="border-1 border-primary opacity-10 w-full" />
           </div>
         </div>
