@@ -18,12 +18,12 @@ import { extraProductList, RatingList } from "../utils/constants";
 
 const ProductDetail = () => {
   return (
-    <div className="mb-[100px]  px-[45px]">
-      <div className="mb-4">
+    <div className="mb-[100px]  px-[16px] md:px-[45px]">
+      <div className="mb-[20px] md:mb-4">
         <img src={HorizontalLine} />
       </div>
-      <div className="breadcrumbs mb-6">
-        <ul className=" text-[16px] text-black/60">
+      <div className="breadcrumbs md:mb-6">
+        <ul className=" text-[14px] md:text-[16px] text-black/60">
           <li>
             <a>Home</a>
           </li>
@@ -40,28 +40,28 @@ const ProductDetail = () => {
       </div>
 
       {/* product details starts here */}
-      <div className="flex gap-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center md:gap-8">
         {/* left side for images here */}
-        <div className="flex gap-3">
-          <div className="flex flex-col gap-7">
-            <img src={SmallProduct1} className="w-[152px] h-[158px]" />
-            <img src={SmallProduct2} className="w-[152px] h-[158px]" />
-            <img src={SmallProduct3} className="w-[152px] h-[158px]" />
+        <div className="flex flex-col lg:flex-row gap-3">
+          <div className="flex lg:flex-col justify-between gap-[4px] lg:gap-7 order-2 lg:order-1">
+            <img src={SmallProduct1} className="w-[111px] h-[106px] lg:w-[152px] lg:h-[158px]"/>
+            <img src={SmallProduct2} className="w-[111px] h-[106px] lg:w-[152px] lg:h-[158px]"/>
+            <img src={SmallProduct3} className="w-[111px] h-[106px] lg:w-[152px] lg:h-[158px]"/>
           </div>
 
-          <div className="big-img">
-            <img src={BigProduct} className="w-[444px] h-[530px]" />
+          <div className="big-img order-1 lg:order-2">
+            <img src={BigProduct} className="w-[356px] h-[370px] lg:w-[444px] lg:h-[530px]" />
           </div>
         </div>
 
         {/* right side for product description starts here */}
-        <div>
-          <div className="flex flex-col  my-0">
-            <h1 className="font-heading text-[40px] ">
+        <div className=" mt-4 md:mt-0">
+          <div className="flex flex-col justify-center px-2 md:px-0 gap-[12px] my-0">
+            <h1 className="font-heading text-[24px] md:text-[40px] text-wrap">
               ONE LIFE GRAPHIC T-SHIRT
             </h1>
-            <div className="flex items-center gap-3 text-[16px]">
-              <div className="flex gap-[6.49px]">
+            <div className="flex items-center gap-[16px] lg:gap-3 text-[16px]">
+              <div className="flex gap-[5.36px] md:gap-[6.49px]">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Rating} alt="star rating" />
                 ))}
@@ -72,76 +72,76 @@ const ProductDetail = () => {
             </div>
 
             <div className="flex items-center gap-[10px]">
-              <h2 className="font-bold  text-[20px] lg:text-[32px]">$260</h2>
-              <h2 className="font-bold  text-[20px] lg:text-[32px] opacity-40 line-through">
+              <h2 className="font-bold  text-[24px] md:text-[32px]">$260</h2>
+              <h2 className="font-bold  text-[24px] md:text-[32px] opacity-40 line-through">
                 $300
               </h2>
               <div className="flex justify-center items-center bg-discountbg rounded-full px-[14px] py-[6px] h-[34px] w-[72px]">
-                <h2 className="font-light text-[10px] lg:text-[16px] text-discount">
+                <h2 className="font-light text-[14px] md:text-[16px] text-discount">
                   -40%
                 </h2>
               </div>
             </div>
           </div>
 
-          <p className="opacity-60 w-[590px] leading-[22px] my-[20px]">
+          <p className="opacity-60 text-[14px] px-2 md:text-[16px] w-full md:w-[590px] leading-[20px] md:leading-[22px] my-[20px]">
             This graphic t-shirt which is perfect for any occasion. Crafted from
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
 
-          <div className="line w-[590px] my-[20px]">
+          <div className="line w-[358px] md:w-[590px] my-[24px] md:my-[20px]">
             <hr />
           </div>
 
-          <p className=" mb-[16px]">Select Colors</p>
-          <div className="colors flex gap-[16px] m-0">
-            <div className="brown flex justify-center items-center w-[37px] h-[37px] rounded-full bg-[#4F4631]">
+          <p className=" mb-[16px] text-[14px] md:text-[16px] px-2 opacity-60">Select Colors</p>
+          <div className="colors flex gap-[12px] px-2 md:gap-[16px] m-0">
+            <div className="brown flex justify-center items-center w-[39px] h-[39px] md:w-[37px] md:h-[37px] rounded-full bg-[#4F4631]">
               {" "}
               <img src={ProductCheck} alt="" />{" "}
             </div>
-            <div className="green flex justify-center items-center w-[37px] h-[37px] rounded-full bg-[#314F4A]"></div>
-            <div className="purple flex justify-center items-center w-[37px] h-[37px] rounded-full bg-[#31344F]"></div>
+            <div className="green flex justify-center items-center w-[39px] h-[39px] md:w-[37px] md:h-[37px] rounded-full bg-[#314F4A]"></div>
+            <div className="purple flex justify-center items-center w-[39px] h-[39px] md:w-[37px] md:h-[37px] rounded-full bg-[#31344F]"></div>
           </div>
 
-          <div className="line w-[590px] my-[20px]">
+          <div className="line w-[358px] md:w-[590px] my-[20px]">
             <hr />
           </div>
 
-          <p className=" mb-[16px]">Choose Size</p>
-          <div className="size flex gap-[12px] m-0">
-            <button className="small  h-[46px] gap-[12px] px-[24px] py-[12px] rounded-[62px] bg-[#F0F0F0] text-[16px] opacity-60">
+          <p className=" mb-[16px] px-2 text-[14px] md:text-[16px] opacity-60">Choose Size</p>
+          <div className="size flex gap-[2px] md:gap-[12px] m-0 px-2">
+            <button className="small  h-[39px] md:h-[46px] gap-[12px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] rounded-[62px] bg-[#F0F0F0] text-[14px] md:text-[16px] opacity-60">
               Small
             </button>
-            <button className="medium h-[46px] gap-[12px] px-[24px] py-[12px] rounded-[62px] bg-[#F0F0F0] text-[16px] opacity-60">
+            <button className="medium h-[39px] md:h-[46px] gap-[12px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] rounded-[62px] bg-[#F0F0F0] text-[14px] md:text-[16px] opacity-60">
               Medium
             </button>
-            <button className="large h-[46px] gap-[12px] px-[24px] py-[12px] rounded-[62px] bg-primary text-[16px] text-white">
+            <button className="large h-[39px] md:h-[46px] gap-[12px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] rounded-[62px] bg-primary text-[14px] md:text-[16px] text-white">
               Large
             </button>
-            <button className="x-large h-[46px] gap-[12px] px-[24px] py-[12px] rounded-[62px] bg-[#F0F0F0] text-[16px] opacity-60">
+            <button className="x-large h-[39px] md:h-[46px] gap-[12px] px-[20px] py-[10px] md:px-[24px] md:py-[12px] rounded-[62px] bg-[#F0F0F0] text-[14px] md:text-[16px] opacity-60">
               X-Large
             </button>
           </div>
 
-          <div className="line w-[590px] my-[20px]">
+          <div className="line w-[358px] md:w-[590px] my-[20px]">
             <hr />
           </div>
 
-          <div className="flex gap-[20px]">
-            <div className="add flex justify-between  w-[170px] h-[52px] px-[20px] py-[16px] bg-whiteHeroBg rounded-[62px]">
+          <div className="flex gap-[12px] lg:gap-[20px]">
+            <div className="add flex justify-between w-[110px] h-[44px] lg:w-[170px] lg:h-[52px] px-[20px] py-[16px] bg-whiteHeroBg rounded-[62px]">
               <div className="minus">
                 {" "}
-                <img src={Minus} alt="" />{" "}
+                <img src={Minus} alt="" className="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" />{" "}
               </div>
-              <div className="number">1</div>
+              <div className="number text-[14px] lg:text-[16px]">1</div>
               <div className="plus">
                 {" "}
-                <img src={Add} alt="" />{" "}
+                <img src={Add} alt="" className="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" />{" "}
               </div>
             </div>
 
             <div>
-              <button className="btn h-[52px] w-[400px] gap-[12px] rounded-[62px] bg-primary text-white text-[16px] font-light">
+              <button className="btn h-[44px] w-[236px] md:h-[52px]  md:w-[400px] gap-[12px] rounded-[62px] bg-primary text-white text-[16px] font-light">
                 Add to Cart
               </button>
             </div>
