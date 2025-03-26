@@ -43,6 +43,20 @@ import al from "./../../assets/arrowleft.svg";
 import hbg from "./../../assets/burger.svg";
 import hps from "./../../assets/homepagesearch.svg";
 import sml from "./../../assets/smline.svg";
+import smp1 from "./../../assets/smProduct1.png";
+import smp2 from "./../../assets/smProduct2.png";
+import smp3 from "./../../assets/smProduct3.png";
+import bgp from "./../../assets/bgProduct.png";
+import mrk from "./../../assets/mark.svg";
+import mns from "./../../assets/minus.svg";
+import add from "./../../assets/add.svg";
+import fil from "./../../assets/filter.svg";
+import opt from "./../../assets/options.svg";
+import ep1 from "./../../assets/extraProduct1.png";
+import ep2 from "./../../assets/extraProduct2.png";
+import ep3 from "./../../assets/extraProduct3.png";
+import ep4 from "./../../assets/extraProduct4.png";
+
 
 
 
@@ -97,3 +111,16 @@ export const ArrowLeft = al;
 export const Hamburger = hbg;
 export const HomepageSearch = hps;
 export const SmLine = sml;
+export const SmallProduct1 = smp1;
+export const SmallProduct2 = smp2;
+export const SmallProduct3 = smp3;
+export const BigProduct = bgp;
+export const ProductCheck = mrk;
+export const Minus = mns;
+export const Add = add;
+export const Filter = fil;
+export const Options = opt;
+export const ExtraProduct1 = ep1;
+export const ExtraProduct2 = ep2;
+export const ExtraProduct3 = ep3;
+export const ExtraProduct4 = ep4;

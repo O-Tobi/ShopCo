@@ -9,7 +9,7 @@ const Product = ({
   discount,
 }) => {
   return (
-    <div className="carousel-item">
+    <div className="carousel-item cursor-pointer">
       <div className="flex flex-col mx-2">
         <div className="mb-4">
           <img src={productImage} alt={productName} className="h-[200px] lg:h-[298px]" />
