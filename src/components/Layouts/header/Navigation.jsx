@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   Arrow,
   Cart,
@@ -8,21 +9,27 @@ import {
 } from "../../utils/assets";
 
 const Navigation = () => {
+  const navigateTo = useNavigate();
+  
+  const handleHome = () => {
+    navigateTo("/")
+  };
+
   return (
-    <>
-      <div className="flex items-center justify-between lg:justify-center justify-self-center w-full lg:w-[1240px] h-[100px] md:gap-[40px]">
+    <div>
+      <div className="flex  items-center justify-between lg:justify-center justify-self-center w-full lg:w-[1240px] h-[100px] md:gap-[40px]">
         {/* Left Section: Logo and Hamburger */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ">
           <a className="block md:hidden">
             <img src={Hamburger} alt="hamburger" />
           </a>
-          <h1 className="font-heading font-bold text-[25.2px] md:text-[32px]">
+          <h1 onClick={handleHome} className="font-heading cursor-pointer font-bold text-[25.2px] md:text-[32px]">
             SHOP.CO
           </h1>
         </div>
 
         {/* Center Section: Navigation */}
-        <ul className="hidden md:flex gap-[24px]">
+        <ul className="hidden md:flex gap-[24px] group [&>*]:cursor-pointer">
           <li>
             <nav className="flex items-center gap-2">
               Shop{" "}
@@ -53,7 +60,7 @@ const Navigation = () => {
         </label>
 
         {/* Right Section: Icons */}
-        <ul className="flex gap-[14px]">
+        <ul className="flex gap-[14px] group [&>*]:cursor-pointer">
           <li className="block lg:hidden">
             <img src={HomepageSearch} />
           </li>
@@ -65,7 +72,7 @@ const Navigation = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
